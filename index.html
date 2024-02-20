@@ -18,6 +18,10 @@
               colors: {
                 clifford: '#da373d',
                 'secondary-color':'#FF4240',
+                'primary-color' : 'rgb(19, 19, 24)',
+                'all-p-color'   : 'rgba(19,19,24,0.6)',
+                'dashed-border-color' : 'rgba(19, 19, 24, 0.2);',
+                'all-hero-text' : 'rgba(255, 255, 255, 0.6)',
               }
             }
           }
@@ -31,42 +35,95 @@
       </style>
 </head>
 <body class="manrope_font">
-    <header class="container mx-auto">
+    <header class="container mx-auto mb-4 md:mb-7">
         <!-- nav -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a href="/index.html">Home</a></li>
+                        <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a>About</a></li>
+                        <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a>Pages</a></li>
+                        <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a>Blog</a></li>
+                        <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class=" text-4xl font-extrabold">Hockey<span class="text-secondary-color">’</span>s</a>
+                <a class="text-2xl font-extrabold md:text-4xl">Hockey<span class="text-secondary-color">’</span>s</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
+            <div class="hidden navbar-center lg:flex">
+                <ul class="px-1 text-base menu menu-horizontal ">
+                    <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000 active:text-secondary-color"><a href="/index.html">Home</a></li>
+                    <li class="hover:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000active:text-secondary-color"><a>About</a></li>
+                    <li class="hover:text-secondary-color active:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000"><a>Pages</a></li>
+                    <li class="hover:text-secondary-color active:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000"><a>Blog</a></li>
+                    <li class="hover:text-secondary-color active:text-secondary-color hover:font-bold hover:transition-all hover:duration-1000"><a>Contact</a></li>
                 </ul>
             </div>
             <div class="navbar-end">
-                <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                <button class="hidden mr-5 lg:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                   </button>
-                <a class="btn">Button</a>
+                <a class="px-3 text-base font-bold text-white md:text-lg hover:bg-transparent btn bg-secondary-color hover:border hover:border-secondary-color hover:text-secondary-color hover:transition hover:duration-1000 md:px-6 ">Get Ticket</a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="container px-4 mx-auto md:px-0">
+      <section>
+          <!-- slider -->
+          <div class="w-full border border-dashed carousel border-border-p-color">
+            <div id="slide1" class="relative w-full carousel-item">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex left-[42%] md:left-5 md:right-5 bottom-3 md:bottom-6">
+                <a href="#slide2" class="mr-4 text-white  bg-primary-color w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full grid justify-center items-center hover:bg-transparent hover:border hover:border-secondary-color hover:text-secondary-color hover:transition hover:duration-1000 ">❮</a> 
+                <a href="#slide2" class="text-white  bg-primary-color w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full grid justify-center items-center hover:bg-transparent hover:border hover:border-secondary-color hover:text-secondary-color hover:transition hover:duration-1000 ">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="relative w-full carousel-item">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex left-[42%] md:left-5 md:right-5 bottom-3 md:bottom-6">
+                <a href="#slide1" class="mr-4 text-white  bg-primary-color w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full grid justify-center items-center hover:bg-transparent hover:border hover:border-secondary-color hover:text-secondary-color hover:transition hover:duration-1000 ">❮</a> 
+                <a href="#slide1" class="text-white  bg-primary-color w-[28px] h-[28px] md:w-[40px] md:h-[40px] rounded-full grid justify-center items-center hover:bg-transparent hover:border hover:border-secondary-color hover:text-secondary-color hover:transition hover:duration-1000 ">❯</a>
+              </div>
+            </div> 
+          </div>
+          <!-- slider meet all heros section -->
+          <div class="flex justify-end mt-3 md:mt-0 md:mr-8 md:-translate-y-56">
+            <div class="p-8 rounded-lg lg:w-2/5 bg-primary-color">
+              <h4 class="mb-2 text-lg font-extrabold text-white md:text-2xl">Meet all the heroes from the field</h4>
+              <p class="text-sm font-medium md:text-base text-all-hero-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            
+            </div>
+          </div>
+      </section>
+        
+        <!-- Professional hockys club -->
+      <section class="mb-20 md:-mt-20">
+        <!-- title -->
+        <div class="py-8 text-center border-dashed border-y border-border-p-color">
+          <h1 class="p-3 text-xl font-extrabold md:text-4xl text-primary-color">Professional Hockeys Club</h1>
+          <div class="w-4/5 mx-auto md:w-2/3">
+            <p class="text-sm font-medium md:text-base text-all-p-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Professional hockys club -->
+      
+      <section class="mb-20 md:-mt-20">
+        <!-- title -->
+        <div class="py-8 mb-6 text-center border-dashed md:mb-12 border-y border-border-p-color">
+          <h1 class="p-3 text-xl font-extrabold md:text-4xl text-primary-color">Program Sections</h1>
+          <div class="w-4/5 mx-auto md:w-2/3">
+            <p class="text-sm font-medium md:text-base text-all-p-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+        
+        </div>
+      </section>
 
     </main>
     <footer>
