@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hocky</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/03df3c4356.js" crossorigin="anonymous"></script>
 
     <script>
         tailwind.config = {
@@ -23,6 +25,8 @@
                 'dashed-border-color' : 'rgba(19, 19, 24, 0.2);',
                 'all-hero-text' : 'rgba(255, 255, 255, 0.6)',
                 'overlay'  : 'rgba(19, 19, 24, 0.5)',
+                'footer-heading-color' : 'rgb(255, 255, 255)',
+                'footer-fa-icon' : 'rgb(255, 66, 64)',
               }
             }
           }
@@ -30,12 +34,12 @@
       </script>
 
       <style>
-        .manrope_font{
+        .manrope-font{
             font-family: "Manrope", sans-serif;
         }
       </style>
 </head>
-<body class="manrope_font">
+<body class="manrope-font">
     <header class="container mx-auto mb-4 md:mb-7">
         <!-- nav -->
         <div class="navbar bg-base-100">
@@ -109,9 +113,17 @@
             <p class="text-sm font-medium md:text-base text-all-p-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
         </div>
+        <!-- content -->
+        <div>
+          <div class="radial-progress" style="--value:0;" role="progressbar">0%</div>
+          <div class="radial-progress" style="--value:20;" role="progressbar">20%</div>
+          <div class="radial-progress" style="--value:60;" role="progressbar">60%</div>
+          <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+          <div class="radial-progress" style="--value:100;" role="progressbar">100%</div>
+        </div>
       </section>
       
-      <!-- Professional hockys club -->
+      <!-- Programm Section -->
       
       <section class="mb-20 md:-mt-20">
         <!-- title -->
@@ -121,48 +133,113 @@
             <p class="text-sm font-medium md:text-base text-all-p-color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
         </div>
+        
+        
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          
-            <!-- first card -->
-             <!-- <div class="bg-[linear-gradient(rgba(19,19,24,0.5)),url('./images/2.png')] bg-[url('./images/2.png')] "> -->
+            
+          <!-- first card -->
           <div class="border border-dashed border-border-p-color">
-            <div class="bg-[url('images/2.png')] bg-center bg-no-repeat bg-cover rounded-2xl p-6 md:pt-24 md:pb-12 md:px-10">
+            <div class="p-6 bg-center bg-no-repeat bg-cover rounded-2xl md:pt-24 md:pb-12 md:px-10"style="background-image: linear-gradient(rgba(19,19,24,0.5), rgba(19,19,24,0.5)), url('./images/2.png')">
               <h2 class="mb-4 text-xl font-extrabold text-white md:text-3xl">Teenager Program</h2>
               <p class="mb-4 text-sm font-medium text-white md:text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-              <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-5 pt-3 pb-3">Register Now!</button>
+              <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-[0.95rem] md:pt-[0.45rem] md:pb-[0.45rem] md:px-[1.25rem] h-[2rem] min-h-[2rem] md:h-[2.5rem] md:min-h-[2.5rem] ">Register Now!</button>
             
             </div>
           </div>
-          
+       
            <!-- second card -->
           <div class="border border-dashed border-border-p-color">
-            <div class="bg-[url('./images/3.png')] bg-center bg-no-repeat bg-cover rounded-2xl p-6 md:pt-24 md:pb-12 md:px-10">
+            <div class="p-6 bg-center bg-no-repeat bg-cover rounded-2xl md:pt-24 md:pb-12 md:px-10"style="background-image: linear-gradient(rgba(19,19,24,0.5), rgba(19,19,24,0.5)), url('./images/3.png')">
               <h2 class="mb-4 text-xl font-extrabold text-white md:text-3xl">Teenager Program</h2>
               <p class="mb-4 text-sm font-medium text-white md:text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-              <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-5 pt-3 pb-3">Register Now!</button>
+              <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-[0.95rem] md:pt-[0.45rem] md:pb-[0.45rem] md:px-[1.25rem] h-[2rem] min-h-[2rem] md:h-[2.5rem] md:min-h-[2.5rem] ">Register Now!</button>
             
             </div>
           </div>
           
           <!-- third card -->
           <div class="border border-dashed md:col-span-2 border-border-p-color">
-            <div class="bg-[url('./images/4.png')] bg-center bg-no-repeat bg-cover  rounded-2xl p-6 md:pt-[180px] md:pb-12 md:px-10 grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-center bg-no-repeat bg-cover  rounded-2xl p-6 md:pt-[180px] md:pb-12 md:px-10 grid grid-cols-1 md:grid-cols-2 "style="background-image: linear-gradient(rgba(19,19,24,0.5), rgba(19,19,24,0.5)), url('./images/4.png')">
               <div>
                 <h2 class="mb-4 text-xl font-extrabold text-white md:text-3xl">Teenager Program</h2>
                 <p class="mb-4 text-sm font-medium text-white md:text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-5 pt-3 pb-3">Register Now!</button>
+                <button class="text-sm md:text-base font-medium text-white border-none btn bg-secondary-color hover:bg-[#D24545] hover:transition hover:delay-300 px-[0.95rem] md:pt-[0.45rem] md:pb-[0.45rem] md:px-[1.25rem] h-[2rem] min-h-[2rem] md:h-[2.5rem] md:min-h-[2.5rem] ">Register Now!</button>
               </div>
             
             </div>
           </div>
-        
+          
         </div>
       </section>
 
     </main>
-    <footer>
+    <footer class="p-10 footer bg-base-200 text-base-content bg-primary-color">
+      <aside >
+        <h2 class="mx-auto mb-4 text-2xl font-extrabold md:text-3xl text-footer-heading-color md:mx-0">Get In Touch</h2>
+        <p class="w-full md:w-[350px] text-base font-medium text-all-hero-text  text-center md:text-left">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        <div class="flex items-center gap-2 mx-auto md:mx-0">
+          <i class="text-lg text-center border border-dashed md:text-xl fa-regular fa-envelope text-footer-fa-icon md:text-left border-all-hero-text"></i>
+<svg xmlns="http://www.w3.org/2000/svg" content="File" data-testid="menu" style="width: 32px; height: 32px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"fill="white"/></svg>
 
+          <p class="text-center text-all-hero-text md:text-left">hockeys@support.com</p>
+        </div>
+      </aside> 
+      <nav class="flex-col hidden md:flex">
+        <h6 class="m-auto mb-5 text-lg font-bold text-center text-footer-heading-color md:text-left md:m-0">Company</h6> 
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">About us</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Leadership</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Careers</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">News & Article</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Legal Notice</a>
+      </nav> 
+      
+      <nav class="flex-col hidden md:flex">
+        <h6 class="m-auto mb-5 text-lg font-bold text-footer-heading-color md:m-0">Support</h6> 
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Help Center</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">FAQ</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Ticket Support</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Contact Us</a>
+      </nav>
+      <!-- for mobile -->
+      <div class="flex flex-row justify-between w-full md:hidden">
+          <nav class="flex flex-col">
+            <h6 class="m-auto mb-5 text-lg font-bold text-center text-footer-heading-color md:text-left md:m-0">Company</h6> 
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">About us</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Leadership</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Careers</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">News & Article</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Legal Notice</a>
+          </nav> 
+          
+          <nav class="flex flex-col">
+            <h6 class="m-auto mb-5 text-lg font-bold text-footer-heading-color md:m-0">Support</h6> 
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Help Center</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">FAQ</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Ticket Support</a>
+            <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Contact Us</a>
+          </nav>
+      </div>
+      <!-- ---------- -->
+      
+      <nav class="m-auto md:m-0">
+        <h6 class="m-auto mb-5 text-lg font-bold text-footer-heading-color md:m-0">Services</h6> 
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Academy</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Group Lesson</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Private Lesson</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Hockeys for kids</a>
+        <a class="m-auto text-base font-medium link link-hover text-all-hero-text md:m-0">Hockeys for Adult</a>
+      </nav>
     </footer>
     
 </body>
 </html>
+
+<!-- <p><br></p><p><br></p><p><img src="https://saifturzo.com/dp/image/catalog/slider/slider1-store1.jpg" style="width: 50%; float: none;"><br></p> -->
+
+
+<!-- <div style="background-img:url('image/catalog/slider/slider1-store1.jpg');display:flex;justify-content:space-between;">
+  <div style="border:2px solid black; padding:20px;"><img src="image/catalog/slider/slider1-store1.jpg" alt="Italian Trulli">
+  </div>
+  <div style="border:2px solid red; padding:20px;"> hrtjrukyumhgnm  vfrhjtyjhytn  srthtrjh </div>
+
+</div> -->
